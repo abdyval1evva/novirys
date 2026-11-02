@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Антивирус — презентация</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input class="r" type="radio" name="s" id="r1" checked>
+<input class="r" type="radio" name="s" id="r2">
+<input class="r" type="radio" name="s" id="r3">
+<input class="r" type="radio" name="s" id="r4">
+<input class="r" type="radio" name="s" id="r5">
+<input class="r" type="radio" name="s" id="r6">
+<div class="bg-grid"></div>
+<div class="progress"><span id="bar"></span></div>
+
+<main class="deck" id="deck">
+
+  <!-- 1. Титульный слайд -->
+  <section class="slide s1 title">
+    <div class="col">
+      <p class="tag rise" style="--d:.2s">Информационная безопасность</p>
+      <h1 class="rise" style="--d:.4s">Антивирус</h1>
+      <p class="lead rise" style="--d:.6s">Как программа-защитник находит угрозы и не даёт им навредить вашему устройству</p>
+      <p class="author rise" style="--d:.9s">Автор: Абдывалиева Асема; Алымбекова Бегимай</p>
+    </div>
+    <div class="hero" aria-hidden="true">
+      <i class="threat t1"></i><i class="threat t2"></i><i class="threat t3"></i><i class="threat t4"></i><i class="threat t5"></i>
+      <svg viewBox="0 0 300 340" class="shield">
+        <circle class="ring" cx="150" cy="170" r="140"/>
+        <path class="body" d="M150 30 L250 68 V160 C250 232 206 286 150 312 C94 286 50 232 50 160 V68 Z"/>
+        <path class="tick" d="M104 168 L138 204 L200 130"/>
+        <line class="scan" x1="60" x2="240" y1="0" y2="0"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 2. Что такое антивирус -->
+  <section class="slide s2">
+    <div class="col wide">
+      <h2 class="rise" style="--d:.2s">Что такое антивирус</h2>
+      <p class="lead rise" style="--d:.4s">Программа, которая постоянно следит за файлами, сайтами и процессами на устройстве и защищает их от вредоносного кода.</p>
+      <div class="trio">
+        <div class="rise" style="--d:.6s"><b>Обнаруживает</b><span>сканирует файлы и программы, ищет признаки заражения</span></div>
+        <div class="rise" style="--d:.8s"><b>Блокирует</b><span>останавливает опасные сайты, загрузки и действия</span></div>
+        <div class="rise" style="--d:1s"><b>Лечит</b><span>удаляет вредоносный код или изолирует файл в карантине</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Угрозы -->
+  <section class="slide s3">
+    <div class="col wide">
+      <h2 class="rise" style="--d:.2s">От чего защищает</h2>
+      <ul class="rows">
+        <li class="rise" style="--d:.4s"><b>Вирусы</b><span>заражают файлы и распространяются вместе с ними</span></li>
+        <li class="rise" style="--d:.55s"><b>Трояны</b><span>маскируются под полезные программы и открывают доступ злоумышленнику</span></li>
+        <li class="rise" style="--d:.7s"><b>Шпионское ПО</b><span>тайно собирает пароли, переписку и данные банковских карт</span></li>
+        <li class="rise" style="--d:.85s"><b>Шифровальщики</b><span>блокируют файлы и требуют выкуп за доступ</span></li>
+        <li class="rise" style="--d:1s"><b>Фишинг</b><span>поддельные сайты и письма, которые выманивают данные</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. Как работает -->
+  <section class="slide s4">
+    <div class="col wide">
+      <h2 class="rise" style="--d:.2s">Как антивирус находит угрозу</h2>
+      <ol class="steps">
+        <li class="rise" style="--d:.5s"><em>1</em><b>Сигнатуры</b><span>файл сравнивается с базой известных вредоносных программ</span></li>
+        <li class="rise" style="--d:.8s"><em>2</em><b>Эвристика</b><span>код проверяется на подозрительные приёмы, даже если вирус новый</span></li>
+        <li class="rise" style="--d:1.1s"><em>3</em><b>Поведение</b><span>программа наблюдает за действиями приложений в реальном времени</span></li>
+        <li class="rise" style="--d:1.4s"><em>4</em><b>Карантин</b><span>угроза изолируется, затем лечится или удаляется</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. Правила -->
+  <section class="slide s5">
+    <div class="col wide">
+      <h2 class="rise" style="--d:.2s">Правила цифровой гигиены</h2>
+      <ul class="checks">
+        <li class="rise" style="--d:.4s">Обновляйте систему и антивирусные базы</li>
+        <li class="rise" style="--d:.55s">Не открывайте подозрительные ссылки и вложения</li>
+        <li class="rise" style="--d:.7s">Скачивайте программы только с официальных сайтов</li>
+        <li class="rise" style="--d:.85s">Используйте сложные пароли и двухфакторную защиту</li>
+        <li class="rise" style="--d:1s">Делайте резервные копии важных файлов</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Итог -->
+  <section class="slide s6 end">
+    <div class="col">
+      <p class="tag rise" style="--d:.2s">Вывод</p>
+      <h2 class="big rise" style="--d:.4s">Антивирус — первая линия защиты, но не единственная</h2>
+      <p class="lead rise" style="--d:.7s">Надёжность устройства зависит от программы и от привычек пользователя.</p>
+      <p class="thanks rise" style="--d:1s">Спасибо за внимание!</p>
+    </div>
+    <div class="hero small" aria-hidden="true">
+      <svg viewBox="0 0 300 340" class="shield">
+        <circle class="ring" cx="150" cy="170" r="140"/>
+        <path class="body" d="M150 30 L250 68 V160 C250 232 206 286 150 312 C94 286 50 232 50 160 V68 Z"/>
+        <path class="tick" d="M104 168 L138 204 L200 130"/>
+      </svg>
+    </div>
+  </section>
+
+</main>
+
+<nav class="nav" aria-label="Навигация по слайдам">
+  <span class="b off pv p1">&#8592;</span>
+  <label for="r1" class="b pv p2" aria-label="Назад">&#8592;</label>
+  <label for="r2" class="b pv p3" aria-label="Назад">&#8592;</label>
+  <label for="r3" class="b pv p4" aria-label="Назад">&#8592;</label>
+  <label for="r4" class="b pv p5" aria-label="Назад">&#8592;</label>
+  <label for="r5" class="b pv p6" aria-label="Назад">&#8592;</label>
+  <div class="dots"><label for="r1" class="d d1" aria-label="Слайд 1"></label><label for="r2" class="d d2" aria-label="Слайд 2"></label><label for="r3" class="d d3" aria-label="Слайд 3"></label><label for="r4" class="d d4" aria-label="Слайд 4"></label><label for="r5" class="d d5" aria-label="Слайд 5"></label><label for="r6" class="d d6" aria-label="Слайд 6"></label></div>
+  <span class="count c1">1 / 6</span>
+  <span class="count c2">2 / 6</span>
+  <span class="count c3">3 / 6</span>
+  <span class="count c4">4 / 6</span>
+  <span class="count c5">5 / 6</span>
+  <span class="count c6">6 / 6</span>
+  <label for="r2" class="b nx n1" aria-label="Вперёд">&#8594;</label>
+  <label for="r3" class="b nx n2" aria-label="Вперёд">&#8594;</label>
+  <label for="r4" class="b nx n3" aria-label="Вперёд">&#8594;</label>
+  <label for="r5" class="b nx n4" aria-label="Вперёд">&#8594;</label>
+  <label for="r6" class="b nx n5" aria-label="Вперёд">&#8594;</label>
+  <span class="b off nx n6">&#8594;</span>
+</nav>
+
+</body>
+</html>
